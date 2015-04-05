@@ -48,25 +48,10 @@
                 <a class="navbar-brand" href="index.html">Wines From Ascoli Piceno</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav" data-bind="foreach: My.TopNav.Links()">
                     <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="wines.html">Varietals</a>
-                    </li>
-                    <li>
-                        <a href="vineyards.html">Vineyards</a>
-                    </li>
-                    <li>
-                        <a href="awards.html">Awards</a>
-                    </li>
-                    <li>
-                        <a href="findwines.html">Find Our Wines</a>
+                        <a data-bind="attr: { href: Url }, text: Name" ></a>
                     </li>
                 </ul>
             </div>
@@ -111,12 +96,23 @@
         </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.map"></script>
+    <script src="js/ViewModels/MyViewModel.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <script type="text/javascript">//<![CDATA[
+        var My = new MyVm();
+        My.Init();
+        $(document).ready(function () {
+            ko.applyBindings(My);
+        });
+        //]]>
+    </script>
 </body>
 
 </html>
