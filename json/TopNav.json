@@ -1,0 +1,30 @@
+﻿[
+  {
+    "Name": "Home",
+    "Url": "index.html"
+  },
+  {
+    "Name": "about",
+    "Url": "about.html"
+  },
+  {
+    "Name": "Varietals",
+    "Url": "wine.html"
+  },
+  {
+    "Name": "Vineyards",
+    "Url": "vineyards.html"
+  },
+  {
+    "Name": "Awards",
+    "Url": "awards.html"
+  },
+  {
+    "Name": "Find Our Wines",
+    "Url": "findwines.html"
+  },
+  {
+    "Name": "News",
+    "Url": "news.html"
+  }
+]

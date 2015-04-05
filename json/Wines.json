@@ -1,0 +1,76 @@
+﻿{
+  "Reds": [
+    {
+      "Name": "Khorakhane",
+      "Vintage": "2007",
+      "Category": "IGT - Marche Rosso",
+      "Vineyard": "Cantina dei Coli Ripani",
+      "Description": "An absolutely elegant, full-bodied red from Cantina dei Colli Ripani. It is 95% Montepulciano and 5% Cabernet Sauvignon. It has been aged in French oak for 2 years. Only 350 cases made. We ordered only 3 cases, six bottles to the case."
+    },
+    {
+      "Name": "Leo Ripanus",
+      "Vintage": "2008",
+      "Category": "DOC - Offida Rosso",
+      "Vineyard": "Cantina dei Coli Ripani",
+      "Description": "Another elegant, full-bodied red from Cantina dei Colli RIpani. It is 70% Montepulciano and 30% Cabernet Sauvignon. It is been aged in Slavonian oak for 18 months."
+    },
+    {
+      "Name": "Castellano",
+      "Vintage": "2011",
+      "Category": "DOC - Rosso Piceno Superiore",
+      "Vineyard": "Cantina dei Coli Ripani",
+      "Description": "Yet another elegant, full-bodied red from Cantina dei Colli Ripani. It is 60% Montepulciano and 40% Sangiovese, the classic Rosso Piceno Superiore blend. It is aged in Slavonian oak for 12 months."
+    },
+    {
+      "Name": "Rupe Nero Gold",
+      "Vintage": "2013",
+      "Category": "DOC - Rosso Piceno",
+      "Vineyard": "Cantina dei Coli Ripani",
+      "Description": "This Is Your Basic Everyday Red From Cantina Dei Colli Ripani. Wonderful Fruit, Very Decent Body And Goes Great With Pizza, Burgers, Red Pasta Sauces. It Is 70% Montepulciano And 30% Sangiovese. No Oaking For This Baby. Everyday Red."
+    },
+    {
+      "Name": "Villa Piatti Offida Rosso",
+      "Vintage": "2008",
+      "Category": "DOC - Offida Rosso",
+      "Vineyard": "Collevite - Cantina Della Marche",
+      "Description": "Okay, But Yes, Another Elegant, Full-Bodied Red From Collevite. It Is 70% Montepulciano And 30% Cabernet Sauvignon. It Is Aged In French Oak For 18 Months."
+    }
+  ],
+  "Whites": [
+    {
+      "Name": "Villa Piatti Offida Passerina",
+      "Vintage": "2013",
+      "Category": "DOCG - Passerina",
+      "Vineyard": "Collevite - Cantina Della Marche",
+      "Description": ""
+    },
+    {
+      "Name": "Villa Piatti Offida Pecorino",
+      "Vintage": "2013",
+      "Category": "DOCG - Pecorino",
+      "Vineyard": "Collevite - Cantina Della Marche",
+      "Description": "This Is A Close Second Among The White. I Dare You To Blind Test It Next To The Rugaro Gold. Again, Full Of Tropical Fruit Tastes, From Collevite. These Also Are Hand-Picked, Select Grapes."
+    },
+    {
+      "Name": "Rugaro Gold",
+      "Vintage": "2013",
+      "Category": "DOCG - Pecorino",
+      "Vineyard": "Cantina Dei Coli Ripani",
+      "Description": ""
+    },
+    {
+      "Name": "Ninfa Ripana",
+      "Vintage": "2013",
+      "Category": "IGT - Passerina",
+      "Vineyard": "Cantina Dei Coli Ripani",
+      "Description": "Your Everyday White. When You Visit Our House In Italy, This Is The 'House' White. To Me, It Is A Cross Between A Sauvignon Blanc And A French Chardonnay. It's A Steal At This Price. Everyday White."
+    },
+    {
+      "Name": "Rugao Flerio",
+      "Vintage": "2013",
+      "Category": "DOC - Pecorino",
+      "Vineyard": "Cantina Dei Coli Ripani",
+      "Description": ""
+    }
+  ]
+}
