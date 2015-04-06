@@ -6,7 +6,7 @@
 
 body {
     font-family: "Non Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('../img/hires/IMG_1375.jpg') no-repeat center center fixed;
+    background: url('../img/bg-vineyard.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -103,6 +103,8 @@ hr {
 }
 
 footer {
+    bottom: 0;
+    position: absolute;
     background: #99CCFF;
     background: rgb(153, 204, 255);
 }
@@ -193,4 +195,8 @@ footer p {
         display: table;
         clear: both;
     }
+}
+#main.container {
+    min-height: 100%;
+    height: auto !important;
 }
