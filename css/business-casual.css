@@ -103,10 +103,15 @@ hr {
 }
 
 footer {
+    /*
     bottom: 0;
-    position: absolute;
+    position: fixed;
     background: #99CCFF;
-    background: rgb(153, 204, 255);
+    background: rgb(153, 204, 255);*/
+}
+footer {
+  background: #fff;
+  background: rgba(255,255,255,0.9);
 }
 
 footer p {
@@ -200,3 +205,8 @@ footer p {
     min-height: 100%;
     height: auto !important;
 }
+ 
+.wine-class a{
+    color: #777;
+    text-decoration: none;
+} 
