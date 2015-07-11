@@ -35,7 +35,9 @@ hr {
     max-width: 400px;
     border-color: #999999;
 }
-
+#WineContent img {
+    margin-bottom: 20px;
+}
 .brand,
 .address-bar {
     display: none;
@@ -210,3 +212,4 @@ footer p {
     color: #777;
     text-decoration: none;
 } 
+
