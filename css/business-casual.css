@@ -44,6 +44,7 @@ hr {
 }
 .brand a{
     color: #fff;
+    text-decoration: none;
 }
 .navbar-brand {
     text-transform: uppercase;
