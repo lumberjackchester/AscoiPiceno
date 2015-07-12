@@ -42,7 +42,9 @@ hr {
 .address-bar {
     display: none;
 }
-
+.brand a{
+    color: #fff;
+}
 .navbar-brand {
     text-transform: uppercase;
     font-weight: 900;
@@ -121,6 +123,12 @@ footer p {
     padding: 5px 0;
 }
 
+@media screen and (max-width:450px){
+    .navbar-brand{
+        font-size: 12px;
+    }
+}
+
 @media screen and (min-width:768px) {
     .brand {
         display: inherit;
@@ -192,7 +200,7 @@ footer p {
         float: none;
         margin: 0 auto;
         table-layout: fixed;
-        font-size: 1.25em;
+        font-size: .93em;
     }
 }
 
