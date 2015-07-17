@@ -73,8 +73,7 @@
                         <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/AscoliPicenoWineTraveler?fref=ts" target="_blank" title="Ascoli Piceno Wine Traveler Facebook Page"
-                            ><i class="fa fa-facebook-official fa-2"></i></a>
+                        <a href="https://www.facebook.com/AscoliPicenoWineTraveler?fref=ts" target="_blank" title="Ascoli Piceno Wine Traveler Facebook Page"><i class="fa fa-facebook-official fa-2"></i></a>
                     </li>
                     <li>
                         <a href="https://twitter.com/PicenoWines" target="_blank" title="@PicenoWines "><i class="fa fa-twitter fa-2"></i></a>
@@ -86,40 +85,43 @@
         <!-- /.container -->
     </nav>
     <div class="brand">
-      <h2>Undiscovered Wines from the Adriatic</h2>  
+        <h2>Undiscovered Wines from the Adriatic</h2>
     </div>
-    
+
 
     <div id="Main" class="container">
 
-    <div class="row" style="min-width: 50%; margin: auto;">
-        <div class="box" style="padding: 15px 15px;">
-            <div class="col-lg-12 text-center" >
-                <span class="news-banner">
-                    <span class="heading">
-                       <strong> News Banner</strong> - Leo Ripanus wins 90 pts in Wine Spectator <a href="/News.html#Leo-Ripanus-90pts-Wine-Sectator">...</a>  
-                </span>
-            </div>
-        </div>
-    </div>
-
-        <div id="spacer" style="height: 306px;">
-            
-        </div> 
-
-    <footer>
-        <div class="container">
-            <div class="row">
+        <div class="row" style="min-width: 50%; margin: auto;">
+            <div class="box" style="padding: 15px 15px;">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Piceno, LLC 2015</p>
+                    <span class="news-banner">
+                        <span class="heading">
+                            <strong> News Banner</strong> - Leo Ripanus wins 90 pts in Wine Spectator <a href="/News.html#Leo-Ripanus-90pts-Wine-Sectator">...</a>
+                        </span>
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div id="spacer" style="height: 306px;">
+
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p>Copyright &copy; Piceno, LLC 2015</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.3.0/knockout-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
@@ -130,7 +132,23 @@
             interval: 0 //changes the speed
         })
     </script>
+    <script>
+        window.twttr = (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0],
+              t = window.twttr || {};
+            if (d.getElementById(id)) return t;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
 
+            t._e = [];
+            t.ready = function (f) {
+                t._e.push(f);
+            };
+
+            return t;
+        }(document, "script", "twitter-wjs"));</script>
 </body>
 
 </html>
