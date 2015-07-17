@@ -16,3 +16,12 @@ divide wines by red/wite then vineyard
 contact us section
 
 
+
+
+7-16-2015
+
+awards/reviews images need to be extracted - this is time comsuming not sure maybe 2-3 hrs
+
+contact - make maps responsive (setting div classes?)
+
+verietals - create 3 columns for graeps that have a lot of copy
