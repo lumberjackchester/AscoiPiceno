@@ -147,10 +147,14 @@ footer {
 }
 
 @media screen and (min-width:768px) {
+    .brand.heading {
+        padding-top: 0px;
+    }
+
     .brand {
         display: inherit;
         margin: 0;
-        padding: 30px 0 10px;
+        padding: 20px 0 10px;
         text-align: center;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
         font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -204,6 +208,8 @@ footer {
         border: none;
         background: #fff;
         background: rgba(255,255,255,0.9);
+        width: 1170px;
+        margin: 0 auto 20px;
     }
 
     .nav > li > a {
