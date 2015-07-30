@@ -103,6 +103,7 @@ hr {
     .intro-text.title {
         padding: 35px 0;
         font-size: 2.05em;
+        font-weight: bold;
     }
 
 .img-heading {
