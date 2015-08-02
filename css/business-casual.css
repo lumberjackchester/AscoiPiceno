@@ -145,9 +145,20 @@ footer {
     .navbar-brand {
         font-size: 12px;
     }
+
+    iframe {
+        width: 200px;
+        height: 150px;
+    }
 }
 
 @media screen and (min-width:768px) {
+
+    iframe {
+        width: 400px;
+        height: 250px;
+    }
+
     .brand.heading {
         padding-top: 0px;
     }
@@ -231,6 +242,12 @@ footer {
 }
 
 @media screen and (min-width:1200px) {
+
+    iframe {
+        width: 600px;
+        height: 250px;
+    }
+
     .box:after {
         content: '';
         display: table;
