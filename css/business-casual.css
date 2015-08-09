@@ -4,6 +4,11 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: "Non Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('../img/bg-vineyard-fall.jpg') no-repeat center center fixed;
@@ -11,6 +16,8 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    /* Margin bottom by footer height */
+    margin-bottom: 37px;
 }
 
 h1,
@@ -124,14 +131,8 @@ hr {
 }
 
 footer {
-    /*
     bottom: 0;
-    position: fixed;
-    background: #99CCFF;
-    background: rgb(153, 204, 255);*/
-}
-
-footer {
+    position: absolute;
     background: #fff;
     background: rgba(255,255,255,0.9);
 }
