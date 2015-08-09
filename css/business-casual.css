@@ -153,7 +153,7 @@ footer {
     }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:1200px) {
 
     iframe {
         width: 400px;
@@ -255,6 +255,45 @@ footer {
         clear: both;
     }
 }
+@media screen and (min-width:1200px) {
+
+    
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+        width: 1170px;
+        margin: 0 auto 20px;
+    }
+
+    .nav > li > a {
+        padding: 15px;
+    }
+
+    .navbar-nav > li > a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: .93em;
+    }
+}
 
 #main.container {
     min-height: 100%;
@@ -269,3 +308,4 @@ footer {
 .wines img {
     margin: auto;
 }
+ 
