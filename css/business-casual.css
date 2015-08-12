@@ -147,7 +147,7 @@ footer {
         font-size: 14px;
     }
 
-    iframe {
+   .map iframe {
         width: 200px;
         height: 150px;
     }
@@ -155,7 +155,7 @@ footer {
 
 @media screen and (min-width:1200px) {
 
-    iframe {
+   .map iframe {
         width: 400px;
         height: 250px;
     }
@@ -244,7 +244,7 @@ footer {
 
 @media screen and (min-width:1200px) {
 
-    iframe {
+   .map iframe {
         width: 600px;
         height: 250px;
     }
