@@ -56,6 +56,11 @@
                 contactFormUtils.addError($phone.parent());
             }
 
+            var message = $('#message');
+            if (!contactFormUtils.isValidEmail(message.val())) {
+                hasErrors = true;
+                contactFormUtils.addError(message);
+            }
             //if there are any errors return without sending e-mail
             if (hasErrors) {
                 $btn.button('reset');
@@ -72,7 +77,7 @@
                     contactFormUtils.clearForm();
                 },
                 error: function (response) {
-                    contactFormUtils.addAjaxMessage(response.responseJSON.message, true);
+                    contactFormUtils.addAjaxMessage(response.responseText, true);
                 },
                 complete: function () {
                     $btn.button('reset');
