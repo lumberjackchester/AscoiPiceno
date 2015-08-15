@@ -57,7 +57,7 @@
             }
 
             var $message = $('#message');
-            if (!contactFormUtils.isValidEmail($message.val())) {
+            if (!($message.val())) {
                 hasErrors = true;
                 contactFormUtils.addError($message);
             }
