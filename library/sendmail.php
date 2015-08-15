@@ -39,11 +39,11 @@
 
   //do Captcha check, make sure the submitter is not a robot:)...
   $url = 'https://www.google.com/recaptcha/api/siteverify';
-  $opts = array('http' =>
+ $opts = array('http' =>
     array(
       'method'  => 'POST',
       'header'  => 'Content-type: application/x-www-form-urlencoded',
-      'content' => http_build_query(array('secret' => $_SERVER['RECAPTCHA_SECRET_KEY']), 'response' => $_POST["g-recaptcha-response"]))
+      'content' => http_build_query(array('secret' => $_SERVER['RECAPTCHA_SECRET_KEY'], 'response' => $_POST["g-recaptcha-response"]))
     )
   );
   
@@ -90,7 +90,7 @@ i//f (_SERVER['FEEDBACK_ENCRYPTION'] == 'TLS') {
 
 //$headers = 'From:'.  $_POST['email']. "\r\n" .    'Reply-To:' .  _SERVER['FEEDBACK_EMAIL']  . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
-$mailed = mail(_SERVER['FEEDBACK_EMAIL'] , "Someone wants you to contact them.", $messageBody,);
+$mailed = mail(_SERVER['FEEDBACK_EMAIL'] , "Someone wants you to contact them.", $messageBody);
 if($mailed){
     echo "Email was sent!";
 }else{
