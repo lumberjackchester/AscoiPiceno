@@ -43,9 +43,6 @@ hr {
     border-color: #999999;
 }
 
-#WineContent img {
-    margin-bottom: 20px;
-}
 
 .brand,
 .address-bar {
@@ -67,6 +64,10 @@ hr {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 3px;
+}
+
+img {
+    margin-bottom: 25px;
 }
 
 .img-full {
@@ -121,13 +122,11 @@ hr {
 
 .img-border {
     float: none;
-    margin: 0 auto 0;
     border: #999999 solid 1px;
 }
 
 .img-left {
     float: none;
-    margin: 0 auto 0;
 }
 
 footer {
@@ -147,7 +146,7 @@ footer {
         font-size: 14px;
     }
 
-   .map iframe {
+    .map iframe {
         width: 200px;
         height: 150px;
     }
@@ -155,7 +154,7 @@ footer {
 
 @media screen and (min-width:1200px) {
 
-   .map iframe {
+    .map iframe {
         width: 400px;
         height: 250px;
     }
@@ -188,8 +187,6 @@ footer {
 
     .img-left {
         float: left;
-        margin-right: 25px;
-        margin-bottom: 25px;
     }
 
     .address-bar {
@@ -244,7 +241,7 @@ footer {
 
 @media screen and (min-width:1200px) {
 
-   .map iframe {
+    .map iframe {
         width: 600px;
         height: 250px;
     }
@@ -255,9 +252,10 @@ footer {
         clear: both;
     }
 }
+
 @media screen and (min-width:1200px) {
 
-    
+
     .navbar {
         border-radius: 0;
     }
@@ -308,4 +306,3 @@ footer {
 .wines img {
     margin: auto;
 }
- 
