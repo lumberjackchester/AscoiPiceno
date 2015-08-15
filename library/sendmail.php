@@ -5,8 +5,6 @@
    * @param  String $messsage error message of response
    * @return void
    */
-   openlog("sendmailLog", LOG_PID | LOG_PERROR, LOG_LOCAL0);
-   
   function errorResponse ($messsage) {
     header('HTTP/1.1 500 Internal Server Error');
     die(json_encode(array('message' => $messsage)));
@@ -34,7 +32,7 @@
   
   
     $access = date("Y/m/d H:i:s");
-    syslog(LOG_INFO, "Sending Captcha: $access value: ({$_SERVER['RECAPTCHA_SECRET_KEY']})");
+    error_log("Sending Captcha: $access value: ({$_SERVER['RECAPTCHA_SECRET_KEY']})");
   
 
   //do Captcha check, make sure the submitter is not a robot:)...
@@ -48,7 +46,8 @@
   );
   
     $access = date("Y/m/d H:i:s");
-    syslog(LOG_INFO, "Sending Captcha: $access {$opts} ({$_SERVER['HTTP_USER_AGENT']})");
+    
+    error_log("Sending Captcha: $access {$opts} ({$_SERVER['HTTP_USER_AGENT']})");
   $context  = stream_context_create($opts);
   $result = json_decode(file_get_contents($url, false, $context, -1, 40000));
 
@@ -58,8 +57,15 @@
   syslog(LOG_WARNING, "Captcha Failure: $access {$opts} ({$_SERVER['HTTP_USER_AGENT']})");
     errorResponse('reCAPTCHA checked failed!');
   }
+  
  ////attempt to send email
 $messageBody = constructMessageBody();
+   $mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone wants you to contact them.", $messageBody);
+if($mailed){
+    echo "Email was sent!";
+}else{
+    echo "Email was not sent :(";
+}
 //require './vender/php_mailer/PHPMailerAutoload.php';
 //$mail = new PHPMailer;
 //$mail->CharSet = 'UTF-8';
@@ -87,14 +93,5 @@ i//f (_SERVER['FEEDBACK_ENCRYPTION'] == 'TLS') {
 //    } else {
 //    errorResponse('An expected error occured while attempting to send the email: ' . $mail->ErrorInfo);
 //    }
-
-//$headers = 'From:'.  $_POST['email']. "\r\n" .    'Reply-To:' .  _SERVER['FEEDBACK_EMAIL']  . "\r\n" . 'X-Mailer: PHP/' . phpversion();
-
-$mailed = mail(_SERVER['FEEDBACK_EMAIL'] , "Someone wants you to contact them.", $messageBody);
-if($mailed){
-    echo "Email was sent!";
-}else{
-    echo "Email was not sent :(";
-}
-
+ 
 ?>
