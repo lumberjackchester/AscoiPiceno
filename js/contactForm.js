@@ -56,10 +56,10 @@
                 contactFormUtils.addError($phone.parent());
             }
 
-            var message = $('#message');
-            if (!contactFormUtils.isValidEmail(message.val())) {
+            var $message = $('#message');
+            if (!contactFormUtils.isValidEmail($message.val())) {
                 hasErrors = true;
-                contactFormUtils.addError(message);
+                contactFormUtils.addError($message);
             }
             //if there are any errors return without sending e-mail
             if (hasErrors) {
