@@ -20,7 +20,7 @@
     foreach ($fields_req as $name => $required) {
       $postedValue = $_POST[$name];
       if ($required && empty($postedValue)) {
-        errorResponse("$name is empty.");
+        errorResponse("$name is required.");
       } else {
         $message_body .= ucfirst($name) . ":  " . $postedValue . "\n";
       }
