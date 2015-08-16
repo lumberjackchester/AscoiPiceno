@@ -59,8 +59,10 @@
   }
   
  ////attempt to send email
+  
 $messageBody = constructMessageBody();
-   $mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone wants you to contact them.", $messageBody);
+syslog (LOG_DEBUG, $messageBody);
+$mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone wants you to contact them.", $messageBody);
 if($mailed){
     echo "Email was sent!";
 }else{
