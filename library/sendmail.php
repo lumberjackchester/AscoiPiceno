@@ -59,41 +59,18 @@
   }
   
  ////attempt to send email
-  
+  $headers = 'From: admin@picenowines.com' . "\r\n" .
+    'Reply-To: lumberjackchester@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
 $messageBody = constructMessageBody();
 syslog (LOG_DEBUG, $messageBody);
-$mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone wants you to contact them.", $messageBody);
-if($mailed){
+$mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone submitted thier contact info on PicenoWines.com.", $messageBody);
+if($mailed){    
+    header('HTTP/1.1 200 OK');
     echo "Email was sent!";
+
 }else{
     echo "Email was not sent :(";
-}
-//require './vender/php_mailer/PHPMailerAutoload.php';
-//$mail = new PHPMailer;
-//$mail->CharSet = 'UTF-8';
-//$mail->isSMTP();
-//$mail->Host = _SERVER['FEEDBACK_HOSTNAME'];
-  
-i//f (_SERVER['FEEDBACK_ENCRYPTION'] == 'TLS') {
-//    $mail->SMTPSecure = 'tls';
-//    $mail->Port = 587;
-//} elseif (_SERVER['FEEDBACK_ENCRYPTION'] == 'SSL') {
-//    $mail->SMTPSecure = 'ssl';
-//    $mail->Port = 465;
-//}
+} 
 
-//$mail->setFrom($_POST['email'], $_POST['name']);
-//$mail->addAddress(_SERVER['FEEDBACK_EMAIL'));
-
-//$mail->Subject = $_POST['reason'];
-//$mail->Body  = $messageBody;
-
-
-////try to send the message
-//if($mail->send()) {
-//    echo json_encode(array('message' => 'Your message was successfully submitted.'));
-//    } else {
-//    errorResponse('An expected error occured while attempting to send the email: ' . $mail->ErrorInfo);
-//    }
- 
 ?>
