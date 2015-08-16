@@ -66,8 +66,9 @@ $messageBody = constructMessageBody();
 syslog (LOG_DEBUG, $messageBody);
 $mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone submitted thier contact info on PicenoWines.com.", $messageBody, $headers);
 if($mailed){    
-    header('HTTP/1.1 200 OK');
-    echo "Email was sent!";
+    http_response_code(200);
+   $mess =  json_encode("Your contact information has been sent to Jack!");
+    echo $mess;
 
 }else{
     echo "Email was not sent :(";

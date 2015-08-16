@@ -73,7 +73,7 @@
                 url: "library/sendmail.php",
                 data: $("#feedbackForm").serialize(),
                 success: function (data) {
-                    contactFormUtils.addAjaxMessage(data.message, false);
+                    contactFormUtils.addAjaxMessage(data, false);
                     contactFormUtils.clearForm();
                 },
                 error: function (response) {
