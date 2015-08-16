@@ -64,7 +64,7 @@
     'X-Mailer: PHP/' . phpversion();
 $messageBody = constructMessageBody();
 syslog (LOG_DEBUG, $messageBody);
-$mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone submitted thier contact info on PicenoWines.com.", $messageBody);
+$mailed = mail($_SERVER['FEEDBACK_EMAIL'] , "Someone submitted thier contact info on PicenoWines.com.", $messageBody, $headers);
 if($mailed){    
     header('HTTP/1.1 200 OK');
     echo "Email was sent!";
