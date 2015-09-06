@@ -32,7 +32,29 @@
 </head>
 
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '803185256469448',
+      xfbml      : true,
+      version    : 'v2.4'
+    });
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
     <div class="brand"><a href="index.html">Piceno Wines</a></div>
     <!-- Navigation -->
     <nav class="navbar navbar-default" role="navigation">
@@ -101,9 +123,8 @@
                     <hr>
                     <img class="img-responsive img-border img-left" src="img/intro-pic.jpg" alt="">
                     <hr class="visible-xs">
-                    <p>
-                        HOW ABOUT SOME News HERE?  Facebook posts?
-                    </p>
+					<div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/PicenoWines/posts/822696814512846" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/PicenoWines/posts/822696814512846"><p>http://palatepress.com/2015/02/wine/pecorino-marches-comeback-kid/Great piece about the Pecorino grape from Province of Ascoli Piceno (Marche Region of Italia). Cudos to author, Mike Madaio.</p>Posted by <a href="https://www.facebook.com/PicenoWines">Piceno Wines</a> on&nbsp;<a href="https://www.facebook.com/PicenoWines/posts/822696814512846">Sunday, September 6, 2015</a></blockquote></div></div>
+               <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/AscoliPicenoWineTraveler/posts/820413514741176" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/AscoliPicenoWineTraveler/posts/820413514741176"><p>http://wsimag.com/travel/10069-le-marche-the-new-tuscanyFresh from the Wall Street Journal</p>Posted by <a href="https://www.facebook.com/AscoliPicenoWineTraveler">Ascoli Piceno Wine Traveler</a> on&nbsp;<a href="https://www.facebook.com/AscoliPicenoWineTraveler/posts/820413514741176">Wednesday, September 2, 2015</a></blockquote></div></div>
 
                 </div>
                 <div class="clearfix"></div>
@@ -139,6 +160,16 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67256255-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 
 </html>
