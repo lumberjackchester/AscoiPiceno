@@ -1,0 +1,50 @@
+The name of the DOC allegedly traces back to Roman times and draws its name from the ancient Roman city of Faleria (now the modern day commune of Falerone).  The Falerio blend combines many wines unique to the Marche region … somewhat rare 
+
+Italian varietals that are seldom found elsewhere in Italy.
+
+http://picenowines.com/
+
+
+home page shorten nav bar
+
+remove news news banner / move it to 3/4ths width of the screen
+move up the title 'undiscovered'  lower the font size
+
+move awards icon image up to left increase font size of awards title and make bottom hr at same level as the bottom of image
+
+
+increase titles of sections to 25px
+
+
+---varietals
+fliping back in forth left to right
+
+title of image images
+
+--vineyards 
+
+increase title, move images inline with title 
+remove "/ date"" from wines
+reorder wines by best quality
+add ninfa ripana gold
+add links to pdf
+
+--- create contact page move navigation of contact to the end
+
+
+
+9-6-2015
+
+make heading spacing smaller -     padding: 10px 0;
+
+intro-text title text-center
+
+    /* padding: 0px 0; */
+    font-size: 2.05em;
+    font-weight: bold;
+	
+	awards & reviews
+	create excerpt and link to articles -- see latest emails from jack
+	
+	review page - add box of pa vine company reviews - block reverse cronological order
+ 
