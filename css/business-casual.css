@@ -108,11 +108,13 @@ img {
     letter-spacing: 1px;
 }
 
-    .intro-text.title { 
+    .intro-text.title {
         font-size: 2.05em;
         font-weight: bold;
-    } 
     }
+
+}
+
 .img-heading {
     float: none;
     margin-top: 20px !important;
@@ -306,9 +308,15 @@ footer {
     margin: auto;
 }
 
-.fb-embed{
+.fb-embed {
     margin-bottom: 20px;
 }
-.vineyard{
+
+.vineyard {
     margin-top: 20px;
+}
+
+.heading hr {
+    margin-top: 0;
+    margin-bottom: 0;
 }
