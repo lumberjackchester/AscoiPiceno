@@ -115,10 +115,13 @@ img {
 
 }
 
-.img-heading {
+.img-heading, .img-heading-wide {
     float: none;
     margin-top: 20px !important;
     border: #999999 solid 1px;
+}
+.img-heading-wide{
+    padding-top: 50px;
 }
 
 .img-border {
