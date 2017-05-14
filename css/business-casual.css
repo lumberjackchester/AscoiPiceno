@@ -12,10 +12,7 @@ html {
 body {
     font-family: "Non Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('../img/bg-vineyard-fall.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;
     /* Margin bottom by footer height */
     margin-bottom: 37px;
 }
@@ -49,10 +46,10 @@ hr {
     display: none;
 }
 
-    .brand a {
-        color: #fff;
-        text-decoration: none;
-    }
+.brand a {
+    color: #fff;
+    text-decoration: none;
+}
 
 .navbar-brand {
     text-transform: uppercase;
@@ -107,10 +104,10 @@ img {
     letter-spacing: 1px;
 }
 
-    .intro-text.title {
-        font-size: 2.05em;
-        font-weight: bold;
-    }
+.intro-text.title {
+    font-size: 2.05em;
+    font-weight: bold;
+}
 
 }
 
@@ -140,10 +137,10 @@ footer {
     background: rgba(255,255,255,0.9);
 }
 
-    footer p {
-        margin: 0;
-        padding: 5px 0;
-    }
+footer p {
+    margin: 0;
+    padding: 5px 0;
+}
 
 @media screen and (max-width:450px) {
     .navbar-brand {
@@ -153,6 +150,11 @@ footer {
     .map iframe {
         width: 200px;
         height: 150px;
+    }
+    
+    body{
+
+        background: url('../img/bg-vineyard-fall-768.jpg') no-repeat center center fixed;        
     }
 }
 
@@ -335,8 +337,21 @@ figure {
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     figure {
         width: 100%;
+    }
+    body{
+
+        background: url('../img/bg-vineyard-fall-768.jpg') no-repeat center center fixed;        
+    }
+}
+
+@media screen and (max-width:450px) {
+ 
+    
+    body{
+
+        background: url('../img/bg-vineyard-fall-450.jpg') no-repeat center center fixed;        
     }
 }
