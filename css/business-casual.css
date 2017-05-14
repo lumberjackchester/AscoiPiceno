@@ -119,7 +119,8 @@ img {
     margin-top: 20px !important;
     border: #999999 solid 1px;
 }
-.img-heading-wide{
+
+.img-heading-wide {
     padding-top: 50px;
 }
 
@@ -322,12 +323,20 @@ footer {
     margin-top: 0;
     margin-bottom: 0;
 }
+
 figure {
-  float: left;
-  width: 45%;
-  text-align: center;
-  font-style: italic;
-  font-size: smaller;
-  text-indent: 0;
-  margin: 0.5em;
+    float: left;
+    width: 45%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    margin: 1em;
+}
+
+
+@media screen and (max-width:768px) {
+    figure {
+        width: 100%;
+    }
 }
