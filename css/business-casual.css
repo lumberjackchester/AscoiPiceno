@@ -141,17 +141,34 @@ footer p {
     margin: 0;
     padding: 5px 0;
 }
-
+.absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 @media screen and (max-width:450px) {
     .navbar-brand {
         font-size: 14px;
     }
 
+    #ccrVid{
+        width: 400px;
+        height: 250px;
+    }
+
+    #ccrVid iframe{
+
+        width: 400px;
+        height: 250px;
+    }
     .map iframe {
         width: 200px;
         height: 150px;
     }
-    
+
     body{
 
         background: url('../img/bg-vineyard-fall-768.jpg') no-repeat center center fixed;        
@@ -160,6 +177,16 @@ footer p {
 
 @media screen and (min-width:1200px) {
 
+
+    #ccrVid{
+        width: 800px;
+        height: 400px;
+    }
+    #ccrVid iframe{
+
+        width: 800px;
+        height: 500px;
+    }
     .map iframe {
         width: 400px;
         height: 250px;
@@ -348,8 +375,8 @@ figure {
 }
 
 @media screen and (max-width:450px) {
- 
-    
+
+
     body{
 
         background: url('../img/bg-vineyard-fall-450.jpg') no-repeat center center fixed;        
