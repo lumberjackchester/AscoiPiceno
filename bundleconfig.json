@@ -1,0 +1,14 @@
+[
+  {
+    "outputFileName": "vineyards.min.html",
+    "inputFiles": [
+      "vineyards.html"
+    ]
+  },
+  {
+    "outputFileName": "css/business-casual.min.css",
+    "inputFiles": [
+      "css/business-casual.css"
+    ]
+  }
+]
