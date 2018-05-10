@@ -4,17 +4,13 @@ ini_set('display_errors', 'On');
 ini_set('date.timezone', 'America/New_York');
 
 require_once __DIR__ . '/library/vendor/autoload.php'; // change path as needed
-try{
+
 $fb = new \Facebook\Facebook([
   'app_id' => '803185256469448',
   'app_secret' => 'aa09c38b69f0bd9bb35b383d5ff16f79',
   'default_graph_version' => 'v2.10',
-  'default_access_token' => '5106fcd73161d7db63f69fc7bb52e10b' 
+  'default_access_token' => '5106fcd73161d7db63f69fc7bb52e10b' // optional
 ]);
-}
- catch (Exception $ex){
-     echo $ex->getTraceAsString();
- }
 
 // Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
 //   $helper = $fb->getRedirectLoginHelper();
