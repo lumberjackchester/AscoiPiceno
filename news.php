@@ -9,7 +9,7 @@ $fb = new \Facebook\Facebook([
   'app_id' => '803185256469448',
   'app_secret' => 'aa09c38b69f0bd9bb35b383d5ff16f79',
   'default_graph_version' => 'v2.10',
-  'default_access_token' => '5106fcd73161d7db63f69fc7bb52e10b', // optional
+  'default_access_token' => '5106fcd73161d7db63f69fc7bb52e10b' 
 ]);
 
 // Use one of the helper classes to get a Facebook\Authentication\AccessToken entity.
