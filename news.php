@@ -1,9 +1,7 @@
 <?php
-error_reporting(0);
-error_reporting(E_ERROR | E_WARNING | E_PARSE);
-error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
-error_reporting(E_ALL & ~E_NOTICE);
-error_reporting(E_ALL);
+ini_set('error_reporting', E_ALL);
+ini_set('display_errors', 'On');
+ini_set('date.timezone', 'America/New_York');
 
 require_once __DIR__ . '/library/vendor/autoload.php'; // change path as needed
 
