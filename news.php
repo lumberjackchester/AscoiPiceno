@@ -3,8 +3,8 @@
 ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 'On');
 ini_set('date.timezone', 'America/New_York');
-//
-//require_once __DIR__ . '/library/vendor/autoload.php'; // change path as needed
+
+require_once __DIR__ . '/library/vendor/autoload.php'; // change path as needed
 //$accessToken = NULL;
 //$fb = new \Facebook\Facebook([
 //    'app_id' => '803185256469448',
